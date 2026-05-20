@@ -10,7 +10,7 @@ tags: [bitacora]
 El sábado pasado viajamos a **Alpa Corral**, en el sur de Córdoba, invitados por el equipo de la **Universidad Nacional de Río Negro**, liderado por **Daniel Belomo**, y la **Asociación Civil Tierra Unida Activa**, que impulsan un proyecto de **red comunitaria comunitaria y científica Las Lagunitas Alpa Corral**.
 El objetivo de la jornada era compartir experiencias sobre herramientas libres para la gestión del territorio y la comunicación en zonas rurales, con especial foco en el **combate de incendios forestales**.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## El viaje y la llegada
 

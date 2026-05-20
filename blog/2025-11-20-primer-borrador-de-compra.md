@@ -16,7 +16,7 @@ Durante las primeras semanas de trabajo investigamos las opciones disponibles en
 
 En este proceso fueron apareciendo muchas preguntas —que iremos compartiendo a lo largo del proyecto—, pero hoy queremos enfocarnos en mostrarles los dispositivos que consideramos más adecuados para esta primera tanda de compra.
 
-<!-- truncate -->
+{/* truncate */}
 
 Buscamos exclusivamente dispositivos de usuario final: aquellos que no requieren ensamblaje y vienen listos para usar. Los evaluamos en función de lo que entendemos preliminarmente como los requerimientos del combate del fuego:
 
