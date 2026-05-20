@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Wildfire-Mesh",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "WildfireMesh Logo",
+    "description": "WildfireMesh Logo"
+  },
+  "item.label.Proyecto": {
+    "message": "Project",
+    "description": "Navbar item with label Proyecto"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
