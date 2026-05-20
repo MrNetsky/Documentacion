@@ -5,23 +5,32 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import {translate} from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const tagline = translate({
+    id: 'homepage.tagline',
+    message: 'Todos conectados combatiendo el fuego',
+  });
+  const buttonLabel = translate({
+    id: 'homepage.button',
+    message: 'Quiero saber más... 👨🏼‍🚒',
+  });
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">{tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Quiero saber más... 👨🏼‍🚒
+            {buttonLabel}
           </Link>
         </div>
       </div>
