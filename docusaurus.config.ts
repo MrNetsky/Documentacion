@@ -33,7 +33,19 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    locales: ['es', 'en'],
+    localeConfigs: {
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+        htmlLang: 'es',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en',
+      },
+    },
   },
 
   presets: [
@@ -90,6 +102,10 @@ const config: Config = {
         {
           href: 'https://github.com/Wildfire-Mesh/Documentacion',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],

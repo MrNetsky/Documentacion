@@ -41,7 +41,6 @@ Si bien existe una gran cantidad de dispositivos en el mercado, luego de un aná
 
 :::warning ADVERTENCIA:
 Nuestra elección de dispositivos y cantidades están dirigidas a los combatientes del fuego, a las situaciones que deben afrontar y a nuestras creencias sobre las necesidades que deben estar cubiertas.
-<!-- Este proceso de elección seguramente cambiará una vez realizada las pruebas de campo con los bomberos. Y en una eventual compra futura, aquí se adjuntará su respectivo blog. -->
 :::
 
 Si hablamos de los dispositivos **portables**, adquirimos 6 de c/u (N37 y M1) y 6 MeshPocket. Aunque estos últimos son powerbanks (de 10.000mAh en el modelo elegido), también pueden desempeñarse como los dos anteriores. Es de nuestro intrés saber cómo trabajan estos dispositivos en entornos donde los dispositivos son homogéneos, para luego evaluarlos en escenarios mixtos, y contrastar los resultados obtenidos, ya que este último posiblemente se aproxime más a la realidad.
