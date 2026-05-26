@@ -18,7 +18,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::warning Atención
+:::warning ¡Atención!
 Este artículo fue creado en mayo de 2026. Podés consultar aquí la fecha de su última actualización. Tené en cuenta que Meshtastic evoluciona constantemente, por lo que algunas opciones o procedimientos pueden cambiar con el tiempo.
 :::
 
@@ -40,14 +40,14 @@ Existe un gran variedad de dispositivos y el que hayas de elegir dependerá de s
 Antes de encender cualquier equipo LoRa, conectá la antena al dispositivo. De lo contrario, podrías dañarlo.
 :::
 
-:::warning Advertencia  
-Si el nodo que adquiriste ya viene con Meshtastic instalado, podés comenzar directamente con la configuración. En caso contrario, dirigite al apartado de [<u>**firmware**</u>](#firmware) y luego continuá con esta sección.  
+:::warning ¡Atención!
+Si el nodo que adquiriste ya viene con Meshtastic instalado, podés comenzar directamente con la configuración. En caso contrario, dirígite al apartado de [<u>**firmware**</u>](#firmware) y luego continúa con esta sección.  
 :::
 
 Podés enlazar tu nodo Meshtastic a un teléfono o computadora de dos formas: por USB (serial) o mediante Bluetooth.
 
 - **Conexión por USB (serial):**
-Simplemente conectá el dispositivo a través de un cable USB. La app lo reconocerá automáticamente.
+Simplemente conecta el dispositivo a través de un cable USB. La app lo reconocerá automáticamente.
 - **Conexión por Bluetooth:**
 Al encender el nodo, podrás vincularlo desde tu teléfono o PC como cualquier otro dispositivo Bluetooth.
   - Si el nodo tiene pantalla, mostrará un código de emparejamiento que deberás ingresar en el dispositivo desde el cual te estás conectando.
@@ -59,15 +59,15 @@ Este código se utiliza únicamente la primera vez para establecer la conexión.
 
 ### Configuraciones de radio
 
-Estas configuraciones vienen preconfiguradas para facilitar el uso del dispositivo y, en la práctica, funcionan correctamente. No obstante, si tenés los conocimientos necesarios, podés optar por no utilizarlas y realizar una configuración completamente personalizada.
+Es importante saber que estas configuraciones vienen predefinidas con el fin de aliviar la tarea de quien opera los equipos y que funcionan muy bien ya que los hemos probado. No obstante, si usted posee los conocimientos necesarios puede NO usarlos y hacer una configuración completamente personalizada.
 
 #### Región
 
 :::info información
-Estas configuraciones están pensadas para Argentina. Si te encontrás en otro país, es posible que debas elegir una región diferente, aunque el procedimiento es el mismo.
+Estas configuraciones están pensadas para Argentina. Si te encuentras en otro país, es posible que debas elegir una región diferente, aunque el procedimiento es el mismo.
 :::
 
-La configuración de la región es esencial para poder comunicarte con otros dispositivos, ya que define las frecuencias de operación.
+La configuración de la región es esencial para poder comunicarte con otros dispositivos, ya que define los parámetros de radio esenciales para la comunicación.
 
 Podés configurarla de tres maneras: desde el dispositivo, desde la app del celular o mediante Meshtastic CLI (Command Line Interface). En este artículo no se abordará el uso de esta última herramienta.
 
@@ -99,11 +99,13 @@ Podés modificar esta configuración desde:
 
 Si el nodo que adquiriste ya viene con Meshtastic instalado, podés comenzar a utilizarlo completando las configuraciones anteriores. No obstante, dado que se trata de una tecnología en constante evolución, es recomendable mantener el firmware actualizado.
 
-En caso de que el dispositivo no tenga Meshtastic instalado, el proceso de instalación y actualización es el mismo, por lo que deberás realizarlo manualmente.
+En caso de que el dispositivo no tenga Meshtastic instalado, el proceso de instalación y actualización es el mismo, sólo sigue estos pasos y tendrás tu dispositivo listo para su uso.
 
+:::warning ¡Atención!
 Existen dos métodos para hacerlo: vía BLE (Bluetooth Low Energy) o mediante conexión USB.
 
 Desde este espacio, no recomendamos el uso de BLE (al menos a la fecha de publicación de este artículo), ya que durante las pruebas el proceso resultó inestable y puede dejar el dispositivo en un estado no funcional, requiriendo intervención manual para recuperarlo.
+:::
 
 El método por USB, en cambio, es más estable y confiable, por lo que es el recomendado.
 
@@ -121,10 +123,7 @@ El procedimiento varía según el tipo de hardware del nodo (nRF52 o ESP32). A c
   >
 
 1. Ingresá a la [herramienta de flasheo](https://flasher.meshtastic.org/).
-2. Seleccioná el dispositivo que vas a utilizar.
-   Si no lo encontrás fácilmente, podés filtrar por marca.
-   En caso de dispositivos ensamblados, deberás identificar el modelo de la placa base.
-   Por ejemplo un Meshnology N37 corresponde a un Wio Tracker L1. Para saber qué placa lleva, lee bien la descripción del dispositivo que vayas a comprar. En nuestro caso particular ya sabíamos qué placa traía, pero como había que armarlo, en la caja que venía la placa también especificaba esta importante información.
+2. Seleccioná el dispositivo que vas a utilizar. Si no lo encontrás fácilmente, podés filtrar por marca. En caso de dispositivos ensamblados o DIY(ensamblados por uno mismo), deberás identificar el modelo de la placa base (en nuestro blog, podrá identificar qué marcas son [fabricantes y ensambladores*](/blog/fabricantes-ensambladores)). Por ejemplo un Meshnology N37 corresponde a un Wio Tracker L1. Para saber qué placa lleva, lee bien la descripción del dispositivo que vayas a comprar. En nuestro caso particular ya sabíamos qué placa traía, pero como había que armarlo, en la caja que venía la placa también especificaba esta importante información.
 3. Seleccioná la versión de firmware.
    - Alpha: inestable
    - Beta: estable  
@@ -234,10 +233,7 @@ Es una interfaz más simple, con menos independecia del teléfono, posee como fu
   >
 
 1. Ingresá a la [herramienta de flasheo](https://flasher.meshtastic.org/)
-2. Seleccioná el dispositivo que vas a utilizar.
-   Si no lo encontrás fácilmente, podés filtrar por marca.
-   En caso de dispositivos ensamblados, deberás identificar el modelo de la placa base.
-   Por ejemplo un Meshnology N37 corresponde a un Wio Tracker L1. Para saber qué placa lleva, lee bien la descripción del dispositivo que vayas a comprar. En nuestro caso particular ya sabíamos qué placa traía, pero como había que armarlo, en la caja que venía la placa también especificaba esta importante información.
+2. Seleccioná el dispositivo que vas a utilizar. Si no lo encontrás fácilmente, podés filtrar por marca. En caso de dispositivos ensamblados o DIY(ensamblados por uno mismo), deberás identificar el modelo de la placa base (en nuestro blog, podrá identificar qué marcas son [fabricantes y ensambladores*](/blog/fabricantes-ensambladores)). Por ejemplo un Meshnology N37 corresponde a un Wio Tracker L1. Para saber qué placa lleva, lee bien la descripción del dispositivo que vayas a comprar. En nuestro caso particular ya sabíamos qué placa traía, pero como había que armarlo, en la caja que venía la placa también especificaba esta importante información.
 3. Seleccioná la versión de firmware.
    - Alpha: inestable
    - Beta: estable  
@@ -259,7 +255,7 @@ Es una interfaz más simple, con menos independecia del teléfono, posee como fu
     default
   >
 
-Se recomienda realizar un borrado completo e instalación limpia.
+Es recomendable realizar un borrado completo para hacer una instalación limpia. Ten en cuenta que si hay información previa a este proceso que te interese resguardar, lo óptimo sería hacer un backup.
 
 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
   <img
@@ -287,7 +283,7 @@ Se recomienda realizar un borrado completo e instalación limpia.
     }
   >
 
-Se recomienda realizar un borrado completo e instalación. No se recomienda hacer uso de esta interfaz (al menos a la fecha de la emisión de este artículo.), ya que para el Elecrow ThinkNode M5 Pro no pudimos hacer funcionar el dispositivo con esta interfaz, tuvimos que re-flashear. Por lo que recomendamos dejar deshabilitada la opción InkHUD.
+No se recomienda hacer uso de esta interfaz (al menos a la fecha de la emisión de este artículo.), ya que para el Elecrow ThinkNode M5 Pro no pudimos hacer funcionar el dispositivo con esta interfaz, tuvimos que re-flashear. Por lo que recomendamos dejar deshabilitada la opción InkHUD.
 
 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
   <img
@@ -315,7 +311,7 @@ Se recomienda realizar un borrado completo e instalación. No se recomienda hace
     }
   >
 
-Esta interfaz está disponible para el LilyGo T-Deck y similares. Se recomienda hacer un borrado e instalado y si quieres probarla deberás habilitar la opción de Meshtastic UI.
+Esta interfaz está disponible para el LilyGo T-Deck y similares. Es recomendable realizar un borrado completo para hacer una instalación limpia y si quieres probar esta interfaz deberás habilitar la opción de Meshtastic UI. Ten en cuenta que si hay información previa a este proceso que te interese resguardar, lo óptimo sería hacer un backup.
 
 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
   <img
@@ -343,7 +339,7 @@ Tiene una interfaz similar a la de un teléfono antiguo, que tiene múltiples fu
   </TabItem>
 </Tabs>
 
-¿Cuánto es recomendable actualizar el firmware? Aún no definimos una métrica recomendable que permita asegurar cuánto debe usted actualizar el firmware. Sí recomendamos que haga este procedimiento apenas haya adquirido el producto, aunque no es necesario que lo haga antes de conectarlo al celular por primera vez.
+¿Cada cuánto es recomendable actualizar el firmware? Aún no definimos una métrica recomendable que permita asegurar cuánto debe usted actualizar el firmware. Sí recomendamos que haga este procedimiento apenas haya adquirido el producto, aunque no es necesario que lo haga antes de conectarlo al celular por primera vez.
 
 ## Configuraciones adicionales
 
@@ -351,9 +347,9 @@ Aquí se mostrarán las modificaciones que, quizás, no son tan esenciales pero 
 
 ### Zona horaria
 
-Es posible que esta se ajuste automáticamente al vincular el dispositivo con el teléfono. Sin embargo, puede haber diferencias entre la configuración del nodo y la del celular, por lo que conviene verificarla manualmente.
+Es posible que esta se ajuste automáticamente al vincular el dispositivo con el teléfono. Sin embargo, puede haber diferencias entre la configuración del nodo y la del celular, por lo que conviene verificar manualmente.
 
-En caso de que no aparezca Argentina en la lista, deberás seleccionar una zona horaria equivalente. Para Argentina, se recomienda utilizar “Brasilia”.
+En caso de que no aparezca Argentina en la lista, deberás seleccionar una zona horaria equivalente. Para Argentina, se recomienda utilizar “Brasilia”, porque posee el mismo huso horario.
 
 Este proceso puede realizarse tanto desde el teléfono como desde el nodo (si este cuenta con pantalla).
 
@@ -361,6 +357,8 @@ Este proceso puede realizarse tanto desde el teléfono como desde el nodo (si es
 - *Nodo*: Ir a Reloj → Clock Action → Timezone y seleccionar “BR/Brasilia” (en caso de estar en Argentina). Si te encontrás en otra región, deberás elegir la zona horaria correspondiente.
 
 ### Canales
+
+Un canal en Meshtastic es básicamente un grupo de comunicación. Pensalo como un “grupo de WhatsApp”, pero sin internet.
 
 <Tabs>
   <TabItem
@@ -372,11 +370,11 @@ Este proceso puede realizarse tanto desde el teléfono como desde el nodo (si es
     }
     default
   >
-Desde la app, entrás al apartado de Ajustes/Canales y verás un canal por defecto llamado “LongFast”. Este es el canal preconfigurado y su nombre está asociado al preset de radio que estés utilizando. Como de manera predeterminada viene configurado como “Long Range - Fast”, toma ese nombre. Si cambiás el preset de radio, vas a notar que el nombre del canal también cambia.
+Desde la app, entrás al apartado de Ajustes → Canales y verás un canal por defecto llamado “LongFast”. Este es el canal preconfigurado y su nombre está asociado al preset de radio que estés utilizando. Como de manera predeterminada viene configurado como “Long Range - Fast”, toma ese nombre. Si cambias el preset de radio, vas a notar que el nombre del canal también cambia.
 
 Dentro de “Canales” verás un signo “+”, el cual debés oprimir para crear uno nuevo. Una vez dentro, elegís el nombre del canal y, en la parte de la clave, es recomendable usar el símbolo de recargar para generar automáticamente una clave segura (AES-256). También podés definir una manualmente, pero en ese caso debés asegurarte de que sea válida y compatible.
 
-Una vez terminado, salís de esta ventana y enviás los cambios al dispositivo. Este paso es muy importante: si no aplicás los cambios, el canal no se guardará y no tendrá efecto.
+Una vez terminado, salís de esta ventana y envías los cambios al dispositivo. Este paso es muy importante: si no aplicas los cambios, el canal no se guardará y no tendrá efecto.
 
 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
   <img
@@ -405,7 +403,7 @@ Hay dos métodos. El primero es compartir la clave del canal. Es fundamental que
 
 El segundo método es compartir la configuración del canal mediante un código QR. Para ello, debés ir a la sección de “Conversaciones”, oprimir el botón de compartir ubicado en la parte inferior derecha de la pantalla y usar la opción “Share channels QR code”.
 
-Es importante que actives la opción de **reemplazar**, ya que esto permitirá actualizar la configuración en el dispositivo que reciba el QR. Además, en caso de que formes parte de más de un canal, deberás deseleccionar aquellos que no quieras compartir, ya que por defecto estarán todos seleccionados.
+Es importante que actives la opción de **reemplazar**, ya que esto permitirá actualizar la configuración en el dispositivo que reciba el QR. Además, en caso de que formes parte de más de un canal, deberás deseleccionar aquellos que no quieras compartir, ya que por defecto están todos seleccionados.
 
 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
   <img
@@ -509,9 +507,10 @@ Luego, guardás los cambios y los enviás al dispositivo para que tengan efecto.
   >
 En el apartado de “Ajustes”, casi al final, existe la opción “Aportar la ubicación del teléfono a la malla”. Activarla es recomendable, ya que la ubicación del teléfono suele ser más precisa que la del GPS del nodo.
 
-Esto no implica que se envíen dos ubicaciones. En lugar de eso, el nodo utilizará la ubicación del teléfono en vez de la suya propia.
+Esto no implica que se envíen dos ubicaciones. En lugar de eso, el nodo utilizará la ubicación del teléfono en vez de la suya propia. Por este motivo, es recomendable desactivar el GPS del nodo, ya que de lo contrario consumirá la batería innecesariamente. 
 
-Por este motivo, es recomendable desactivar el GPS del nodo, ya que de lo contrario consumirá la batería innecesariamente.
+Por último, pero no menos importante, en caso de que la opción esté habilitada pero usted NO haya encendido la ubicación de su celular, pues compartirá la del nodo (obviamente si el GPS del nodo está encendido, en caso contrario, no compartirá ninguna ubicación).
+
   </TabItem>
 
 </Tabs>
@@ -522,7 +521,7 @@ Una vez configurado el dispositivo, el siguiente paso es verificar que puede com
 
 ### Envío de mensaje a un canal
 
-La forma más simple de comprobar el funcionamiento es enviar un mensaje a un canal. Para ello, ingresá al canal en el que estés configurado (por ejemplo, el predeterminado), escribí un mensaje y envialo.
+La forma más simple de comprobar el funcionamiento es enviar un mensaje a un canal. Para ello, ingresá al canal en el que estés configurado (por ejemplo, el predeterminado), escribí un mensaje y envíalo.
 
 Si hay otros nodos en la red con la misma configuración (región, canal y radio preset), estos deberían recibir el mensaje.
 
@@ -572,7 +571,7 @@ También podés utilizar el mapa: si otros nodos comparten su ubicación, podrá
 
 Tené en cuenta que:
 
-- Ver un nodo no garantiza una comunicación estable.
+- Ver un nodo no garantiza una comunicación estable. Al estar diseñado para ser una malla móvil, un nodo puede quedarse fuera de cobertura y dejar de “verte”, por ende, no puedes comunicarte con él.
 - La ausencia de respuesta no siempre indica un problema.
 
 *La mejor forma de validar el funcionamiento es contar con al menos dos nodos configurados correctamente y realizar pruebas entre ellos.*
