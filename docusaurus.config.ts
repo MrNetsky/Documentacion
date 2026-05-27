@@ -15,7 +15,9 @@ const config: Config = {
   },
 
   markdown: {
-    format: 'mdx',
+    mdx1Compat: {
+      admonitions: true,
+    },
   },
 
   // Set the production url of your site here
