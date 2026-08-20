@@ -13,6 +13,8 @@ tags:
   - meshtastic
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 El domingo 2 de agosto de 2026 nos reunimos a la ribera del río, en San Isidro (Santa María, Córdoba, Argentina), junto a las brigadas de combatientes del fuego de [La Chilca](https://www.instagram.com/brigadalachilca/), [Chiviquín](https://www.instagram.com/brigadachiviquin?igsh=MTJpaGp4Ymd6dWQ5aw==) e [Ichín](https://www.instagram.com/brigadainchin?igsh=MWp1aGtoeGxnYzU4ZA==). También contamos con el acompañamiento del equipo de [Urgente Cine](https://www.instagram.com/urgentecine/), quienes registraron la jornada.
 
 El objetivo del encuentro fue brindar una capacitación práctica sobre el uso de dispositivos LoRa con firmware Meshtastic y, al mismo tiempo, conocer las impresiones y necesidades de quienes podrían utilizar esta tecnología en futuras intervenciones.
