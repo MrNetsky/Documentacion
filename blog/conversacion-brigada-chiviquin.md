@@ -3,10 +3,10 @@ slug: conversacion-brigada-chiviquin
 title: "Una conversación con la Brigada Chiviquín"
 sidebar_label: "Conversación con la Brigada Chiviquín"
 authors:
-  - key: MrNetsky
-    title: Colaborador
   - key: aguslasp
     title: Autor
+  - key: MrNetsky
+    title: Colaborador
   - key: nicopace
     title: Colaborador
 tags: 
