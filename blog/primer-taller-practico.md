@@ -1,7 +1,7 @@
 ---
 slug: primer-taller-practico
 title: "Capacitación práctica junto a brigadas de combate del fuego" 
-sidebar_label: "Práctica"
+sidebar_label: "Primer taller dictado por Ñandé"
 authors:
   - key: MrNetsky
     title: Autor
