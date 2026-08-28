@@ -1,6 +1,6 @@
 ---
 slug: kit-meshtastic
-title: “¿Cómo implementar Meshtastic en el combate de incendios?”
+title: "¿Cómo implementar Meshtastic en el combate de incendios?"
 sidebar_label: "Kit Meshtastic"
 authors:
   - key: MrNetsky
