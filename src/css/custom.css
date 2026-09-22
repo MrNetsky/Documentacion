@@ -1,30 +1,50 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import '@fontsource-variable/lexend';
 
-/* You can override the default Infima variables here. */
+/**
+  Identidad visual de Ñandé
+*/
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Colores oficiales de Ñandé */
+  --nande-red: #d92027;
+  --nande-orange: #f09f20;
+  --nande-green: #5f7d5c;
+  --nande-green-light: #a9bfa5;
+  --nande-green-dark: #1f2a1f;
+  --nande-cream: #faf2ea;
+  --nande-black: #000000;
+  --nande-white: #ffffff;
+
+  /* Tipografía */
+  --nande-font: 'Lexend', sans-serif;
+
+  /* Integración con Docusaurus / Infima */
+  --ifm-color-primary: var(--nande-green);
+  --ifm-color-primary-dark: var(--nande-green-dark);
+  --ifm-color-primary-darker: var(--nande-green-dark);
+  --ifm-color-primary-darkest: var(--nande-green-dark);
+  --ifm-color-primary-light: var(--nande-green-light);
+  --ifm-color-primary-lighter: var(--nande-green-light);
+  --ifm-color-primary-lightest: var(--nande-cream);
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Tipografía global */
+  --ifm-font-family-base: var(--nande-font);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/**
+ * Modo oscuro
+ */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: var(--nande-green-light);
+  --ifm-color-primary-dark: var(--nande-green);
+  --ifm-color-primary-darker: var(--nande-green);
+  --ifm-color-primary-darkest: var(--nande-green-dark);
+  --ifm-color-primary-light: var(--nande-cream);
+  --ifm-color-primary-lighter: var(--nande-white);
+  --ifm-color-primary-lightest: var(--nande-white);
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
